@@ -56,7 +56,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              window.location.href = 'https://sdn-cikumpa.ghost.io/'
+              window.location.href = 'https://sdn-mekarjaya-13.ghost.io/'
             }}
           >
             Blogs

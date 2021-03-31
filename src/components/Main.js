@@ -48,7 +48,7 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
-          <p>Sekolah Dasar Negeri Mekarjaya 13 Mempunyai banyak prestasi</p>
+          <p>Sekolah Dasar Negeri Mekarjaya 13 Mempunyai banyak Prestasi</p>
           <p>Ini Contoh Untuk Paragraf ke dua</p>
           {close}
         </article>
