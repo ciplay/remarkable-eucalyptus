@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import pic01 from '../images/history.svg'
+import pic02 from '../images/achievement.svg'
+import pic03 from '../images/organization.svg'
 
 class Main extends React.Component {
   render() {
@@ -30,10 +30,13 @@ class Main extends React.Component {
         >
           <h2 className="major">Sejarah</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={pic01} alt="history" />
           </span>
           <p>Sekolah Dasar Negeri Mekarjaya 13 berdiri pada tahun ...</p>
-          <p>Ini Contoh Untuk Paragraf ke dua</p>
+          <p>
+            Beralamatkan di Jl. Merapi, Abadijaya, Kec. Sukmajaya, Kota Depok,
+            Jawa Barat 16417
+          </p>
           {close}
         </article>
 
@@ -46,10 +49,26 @@ class Main extends React.Component {
         >
           <h2 className="major">Prestasi</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={pic02} alt="achievement" />
           </span>
-          <p>Sekolah Dasar Negeri Mekarjaya 13 Mempunyai banyak Prestasi</p>
-          <p>Ini Contoh Untuk Paragraf ke dua</p>
+          <p>Sekolah Dasar Negeri Mekarjaya 13 Mempunyai Banyak Prestasi</p>
+          <span>Di Tahun 2018 - 2019</span>
+          <ol>
+            <li>Juara 1 Solo tk Kec. Sukmajaya</li>
+            <li>Juara 1 Silat Putra tk Kec. Sukmajaya</li>
+            <li>Juara 1 Silat Putri tk Kec. Sukmajaya</li>
+            <li>Juara 2 Silat Putra tk Kec. Sukmajaya</li>
+            <li>Juara 2 Senam Artistik tk Kec. Sukmajaya</li>
+            <li>Juara 2 Tenis Meja Putri tk Kec. Sukmajaya</li>
+            <li>Juara 2 TURBO ATLETIK Putri tk Kec. Sukmajaya</li>
+            <li>Juara 1 Pinunjul tk Kecamatan</li>
+            <li>Juara II Silat Putra tk Kota Depok</li>
+            <li>Juara II Silat Putri tk Kota Depok</li>
+            <li>Juara II Senam Lantai perorangan Putra tk Kota Depok</li>
+            <li>Juara II Tandu Putra Gradasi</li>
+            <li>Juara II Tandu Putri Gradasi</li>
+            <li>Juara II Berkisah Loketa tk Kecamatan Sukmajaya.</li>
+          </ol>
           {close}
         </article>
 
@@ -62,7 +81,7 @@ class Main extends React.Component {
         >
           <h2 className="major">Struktur Organisasi</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={pic03} alt="organization" />
           </span>
           <p>
             Untuk Melihat lebih detil tentang Struktur Organisasi SDN Mekarjaya
