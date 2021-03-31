@@ -143,7 +143,7 @@ class IndexPage extends React.Component {
               setWrapperRef={this.setWrapperRef}
             />
             <ThemeProvider theme={theme}>
-              <ChatBot
+              {/* <ChatBot
                 headerTitle="Pesan"
                 steps={steps}
                 floating={true}
@@ -153,7 +153,7 @@ class IndexPage extends React.Component {
                 style={{ background: 'white' }}
                 submitButtonStyle={{ lineHeight: '0' }}
                 inputStyle={{ background: 'red' }}
-              />
+              /> */}
             </ThemeProvider>
             <Footer timeout={this.state.timeout} />
           </div>
