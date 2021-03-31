@@ -50,7 +50,7 @@
       left: calc(50% - #{_size(border-width) * 1});
       width: _size(border-width);
       height: calc(3.5rem + 1px);
-      background: _palette(border);
+      // background: _palette(border);
     }
   }
 
@@ -66,12 +66,15 @@
     width: 5.5rem;
     height: 5.5rem;
     line-height: 5.5rem;
-    border: solid _size(border-width) _palette(border);
-    border-radius: 100%;
+    // border: solid _size(border-width) _palette(border);
+    // border-radius: 100%;
 
     .icon {
       &:before {
         font-size: 2rem;
+      }
+      img {
+        width: 5rem;
       }
     }
   }
