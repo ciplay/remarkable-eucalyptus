@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 
-const SecondPage = () => (
+const OrganizationPage = () => (
   <Layout>
     <h1>STRUKTUR ORGANISASI</h1>
     <p>Berikut adalah susunan organisasi dari SDN Mekarjaya 13</p>
@@ -11,4 +11,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default OrganizationPage
