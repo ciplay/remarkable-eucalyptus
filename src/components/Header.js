@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import Logo from '../images/logo.png'
+import Typewriter from 'typewriter-effect'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -13,6 +14,19 @@ const Header = props => (
       <div className="inner">
         <h1>SDN Mekarjaya 13</h1>
         <p>Sekolah Dasar Negeri Mekarjaya 13 Kecamatan Sukmajaya Kota Depok</p>
+        <Typewriter
+          onInit={typewriter => {
+            typewriter
+              .typeString('EDUKASI, PRESTASI DAN BERKREASI')
+              .pauseFor(1000)
+              .deleteAll()
+              .start()
+          }}
+          options={{
+            autoStart: true,
+            loop: true,
+          }}
+        />
       </div>
     </div>
     <nav>
