@@ -16,8 +16,8 @@
   width: 100%;
   height: 100vh;
   z-index: 1;
-  -webkit-animation: kenburns-top 5s ease-in-out 1s both;
-  animation: kenburns-top 5s ease-in-out 1s both;
+  -webkit-animation: kenburns-top 5s ease-in-out 1s both alternate-reverse;
+  animation: kenburns-top 5s ease-in-out 1s both alternate-reverse;
 
   &:before,
   &:after {
