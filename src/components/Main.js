@@ -22,23 +22,17 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="sejarah"
+          className={`${this.props.article === 'sejarah' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">Sejarah</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
-          <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
+          <p>Sekolah Dasar Negeri Mekarjaya berdiri pada tahun ...</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
             dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
@@ -56,13 +50,13 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="prestasi"
+          className={`${this.props.article === 'prestasi' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Prestasi</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -85,13 +79,13 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          id="struktur organisasi"
+          className={`${
+            this.props.article === 'struktur organisasi' ? 'active' : ''
+          } ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
+          <h2 className="major">Struktur Organisasi</h2>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
@@ -108,10 +102,10 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          id="hubungi kami"
+          className={`${
+            this.props.article === 'hubungi kami' ? 'active' : ''
+          } ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>

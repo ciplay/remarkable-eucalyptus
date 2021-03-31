@@ -20,37 +20,37 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
+              props.onOpenArticle('sejarah')
             }}
           >
-            Intro
+            Sejarah
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('work')
+              props.onOpenArticle('prestasi')
             }}
           >
-            Work
+            Prestasi
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('struktur organisasi')
             }}
           >
-            About
+            Struktur Organisasi
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('contact')
+              props.onOpenArticle('hubungi kami')
             }}
           >
-            Contact
+            Hubungi Kami
           </button>
         </li>
       </ul>
