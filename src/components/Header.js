@@ -53,6 +53,15 @@ const Header = props => (
             Hubungi Kami
           </button>
         </li>
+        <li>
+          <button
+            onClick={() => {
+              window.location.href = 'https://sdn-cikumpa.ghost.io/'
+            }}
+          >
+            Blogs
+          </button>
+        </li>
       </ul>
     </nav>
   </header>

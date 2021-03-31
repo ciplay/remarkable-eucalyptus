@@ -66,8 +66,8 @@ class Main extends React.Component {
           </span>
           <p>
             Untuk Melihat lebih detil tentang Struktur Organisasi SDN Mekarjaya
-            13 Silakan Untuk{' '}
-            <a href="/struktur_organisasi">Melihat Lebih Jelas</a>
+            13 Silakan Untuk <br />
+            <a href="/struktur_organisasi">Lihat Lebih Jelas</a>
           </p>
           {close}
         </article>
