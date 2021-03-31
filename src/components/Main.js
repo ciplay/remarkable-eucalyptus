@@ -52,8 +52,9 @@ class Main extends React.Component {
             <img src={pic02} alt="achievement" />
           </span>
           <p>
-            Sekolah Dasar Negeri Mekarjaya 13 Memiliki Berbagai Prestasi Silakan
-            Untuk <a href="/prestasi">Lihat Lebih Jelas</a>
+            Sekolah Dasar Negeri Mekarjaya 13 Memiliki Berbagai Prestasi
+            <br />
+            <a href="/prestasi">Lihat Selengkapnya</a>
           </p>
           {close}
         </article>
@@ -70,9 +71,10 @@ class Main extends React.Component {
             <img src={pic03} alt="organization" />
           </span>
           <p>
-            Untuk Melihat lebih detil tentang Struktur Organisasi SDN Mekarjaya
-            13 Silakan Untuk <br />
-            <a href="/struktur_organisasi">Lihat Lebih Jelas</a>
+            Untuk melihat lebih detil tentang Struktur Organisasi SDN Mekarjaya
+            13
+            <br />
+            <a href="/struktur_organisasi">Lihat Selengkapnya</a>
           </p>
           {close}
         </article>

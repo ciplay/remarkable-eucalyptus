@@ -5,6 +5,36 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
+import ChatBot from 'react-simple-chatbot'
+
+import { ThemeProvider } from 'styled-components'
+
+const theme = {
+  headerBgColor: 'red',
+  headerFontColor: '#fff',
+  headerFontSize: '15px',
+  botBubbleColor: 'red',
+  botFontColor: '#fff',
+  userBubbleColor: '#ff7e7e',
+}
+
+const steps = [
+  {
+    id: '1',
+    message: 'Halo, Boleh Aku Tau Nama Kamu?',
+    trigger: '2',
+  },
+  {
+    id: '2',
+    user: true,
+    trigger: '3',
+  },
+  {
+    id: '3',
+    message: 'Hi {previousValue}, Senang Bisa Berkenalan Denganmu',
+    end: true,
+  },
+]
 class IndexPage extends React.Component {
   constructor(props) {
     super(props)
@@ -14,11 +44,13 @@ class IndexPage extends React.Component {
       articleTimeout: false,
       article: '',
       loading: 'is-loading',
+      opened: false,
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
     this.setWrapperRef = this.setWrapperRef.bind(this)
     this.handleClickOutside = this.handleClickOutside.bind(this)
+    this.toggleFloating = this.toggleFloating.bind(this)
   }
 
   componentDidMount() {
@@ -85,6 +117,10 @@ class IndexPage extends React.Component {
     }
   }
 
+  toggleFloating() {
+    this.setState({ opened: !this.state.opened })
+  }
+
   render() {
     return (
       <Layout location={this.props.location}>
@@ -106,6 +142,19 @@ class IndexPage extends React.Component {
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
             />
+            <ThemeProvider theme={theme}>
+              <ChatBot
+                headerTitle="Pesan"
+                steps={steps}
+                floating={true}
+                opened={this.state.opened}
+                toggleFloating={this.toggleFloating}
+                placeholder="Ketik Pesanmu Disini..."
+                style={{ background: 'white' }}
+                submitButtonStyle={{ lineHeight: '0' }}
+                inputStyle={{ background: 'red' }}
+              />
+            </ThemeProvider>
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg"></div>

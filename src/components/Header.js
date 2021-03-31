@@ -17,7 +17,7 @@ const Header = props => (
         <Typewriter
           onInit={typewriter => {
             typewriter
-              .typeString('EDUKASI, PRESTASI DAN BERKREASI')
+              .typeString('TEREDUKASI, BERPRESTASI DAN BERKREASI')
               .pauseFor(1000)
               .deleteAll()
               .start()
