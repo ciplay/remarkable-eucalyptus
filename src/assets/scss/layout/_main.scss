@@ -116,11 +116,13 @@
     }
   }
 
-  #grafik-attrib {
+  #grafik-attrib,
+  #grafik-chart {
     animation: line 1.5s infinite alternate;
   }
 
-  #first-char-effect {
+  #first-char,
+  #first-char-hat {
     animation: effect 1s infinite alternate;
   }
 
@@ -138,7 +140,7 @@
       transform: rotateX(0deg);
     }
     to {
-      transform: rotateX(15deg);
+      transform: rotateX(18deg);
     }
   }
 }
