@@ -1,11 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import pic02 from '../images/achievement.svg'
-
-import styled from 'styled-components'
-
-const StyledLogo = styled.img``
+import SvgAnimated from './Svg2'
 
 const PrestasiModal = props => {
   const close = (
@@ -26,7 +22,7 @@ const PrestasiModal = props => {
     >
       <h2 className="major">Prestasi</h2>
       <span className="image main">
-        <StyledLogo src={pic02} alt="achievement" />
+        <SvgAnimated />
       </span>
       <p>
         Sekolah Dasar Negeri Mekarjaya 13 Memiliki Berbagai Prestasi

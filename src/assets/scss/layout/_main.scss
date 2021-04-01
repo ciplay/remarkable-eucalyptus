@@ -122,8 +122,14 @@
   }
 
   #first-char,
-  #first-char-hat {
+  #first-char-hat,
+  #first-person {
     animation: effect 1s infinite alternate;
+  }
+
+  #second-person {
+    animation: jump 1s infinite alternate-reverse;
+    transform-origin: bottom;
   }
 
   @keyframes line {
@@ -141,6 +147,15 @@
     }
     to {
       transform: rotateX(18deg);
+    }
+  }
+
+  @keyframes jump {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(18deg);
     }
   }
 }
