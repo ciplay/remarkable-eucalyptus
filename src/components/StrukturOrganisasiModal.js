@@ -14,6 +14,10 @@ const StrukturOrganisasiModal = props => {
       onClick={() => {
         props.onCloseArticle()
       }}
+      onKeyPress={() => {
+        props.onCloseArticle()
+      }}
+      role="button"
     ></div>
   )
   return (

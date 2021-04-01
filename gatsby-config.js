@@ -20,5 +20,13 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     `gatsby-plugin-transition-link`,
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        includeInDevelopment: true, // optional parameter to include script in development
+        id: 2328314,
+        sv: 6,
+      },
+    },
   ],
 }
