@@ -120,7 +120,7 @@
     animation: line 1.5s infinite alternate;
   }
 
-  #Vector_18 {
+  #first-char-effect {
     animation: effect 1s infinite alternate;
   }
 
@@ -138,7 +138,7 @@
       transform: rotateX(0deg);
     }
     to {
-      transform: rotateX(13deg);
+      transform: rotateX(15deg);
     }
   }
 }
