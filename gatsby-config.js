@@ -32,7 +32,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: 'YOUR_GOOGLE_ANALYTICS_TRACKING_ID',
+        trackingId: 'G-W0ZHTSE3G3',
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Setting this parameter is optional
@@ -55,6 +55,20 @@ module.exports = {
         sampleRate: 5,
         siteSpeedSampleRate: 10,
         cookieDomain: 'example.com',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-firebase',
+      options: {
+        credentials: {
+          apiKey: 'AIzaSyCO45iFrDNj1NtXjhaYqE6Lr1e-1V3YxOA',
+          authDomain: 'peci-team.firebaseapp.com',
+          // databaseURL: '<YOUR_FIREBASE_DATABASE_URL>',
+          projectId: 'peci-team',
+          storageBucket: 'peci-team.appspot.com',
+          messagingSenderId: '1075419319807',
+          appId: '1:1075419319807:web:d14ffe41f1de6fda0babca',
+        },
       },
     },
   ],
